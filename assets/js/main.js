@@ -11,7 +11,8 @@ function onLoad() {
 }
 
 function onScroll() {
-  if (floatingNav) {
+  console.log(hideNav);
+  if (window.hideNav && floatingNav) {
     if (document.documentElement.scrollTop > menuScrollThreshold)
       floatingNav.classList.remove("hidden");
     else floatingNav.classList.add("hidden");

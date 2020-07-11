@@ -146,7 +146,7 @@ function init() {
 
 function onWindowResize(event) {
   const w = window.innerWidth;
-  const h = container.offsetHeight;
+  const h = container.offsetHeight + 80;
   renderer.setSize(w, h);
   uniforms.u_resolution.value.x = w;
   uniforms.u_resolution.value.y = h;

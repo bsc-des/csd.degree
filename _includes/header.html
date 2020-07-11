@@ -1,3 +1,12 @@
-<header class="floating-nav hidden" id="floating-nav">
+<header
+  class="floating-nav {% if page.hideNav %}hidden{% endif %}"
+  id="floating-nav"
+>
   {%- include nav.html -%}
 </header>
+
+{% if page.hideNav %}
+<script type="text/javascript">
+  window.hideNav = true;
+</script>
+{% endif %}

@@ -1,10 +1,9 @@
-@import "normalize";
-@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
-
 $text-color: #444444;
 $bg-color: #ddddd;
 
-// Page SASS @imports
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+
+@import "normalize";
 @import "nav";
 @import "home";
 
@@ -17,6 +16,10 @@ body {
   line-height: 1.5em;
   overflow-x: hidden;
   direction: rtl;
+}
+
+main {
+  padding-top: 80px;
 }
 
 .ltr {
@@ -57,7 +60,6 @@ h2 {
   padding: 0.5em 1em;
   border-radius: 2px;
   margin: 1em;
-  float: left;
 
   .material-icons {
     vertical-align: bottom;
