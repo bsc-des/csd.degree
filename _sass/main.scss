@@ -5,6 +5,7 @@ $text-color: #444444;
 $bg-color: #ddddd;
 
 // Page SASS @imports
+@import "nav";
 @import "home";
 
 body {
