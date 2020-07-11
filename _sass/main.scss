@@ -1,0 +1,74 @@
+@import "normalize";
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+
+$text-color: #444444;
+$bg-color: #ddddd;
+
+// Page SASS @imports
+@import "home";
+
+body {
+  text-align: center;
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: "Miriam Libre", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+p {
+  text-align: right;
+  line-height: 1.8em;
+  color: #666666;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3.5em;
+  line-height: 1.3em;
+  z-index: 10;
+  position: relative;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.button {
+  display: inline-block;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #555;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  margin: 1em;
+  float: left;
+
+  .material-icons {
+    vertical-align: bottom;
+    margin-left: -0.3em;
+  }
+}
+
+.columns {
+  display: flex;
+}
+
+.columns > div {
+  padding: 2em;
+  flex: 1 1 0px;
+}

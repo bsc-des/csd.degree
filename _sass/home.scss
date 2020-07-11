@@ -1,0 +1,34 @@
+.hero {
+  background-color: $text-color;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.title-right {
+  text-align: left;
+  margin-left: 45%;
+}
+
+.title-left {
+  direction: ltr;
+  text-align: right;
+  margin-right: 45%;
+}
+
+.headline {
+  font-size: 2em;
+  color: $text-color;
+  line-height: 1.1em;
+  width: 90%;
+  margin: auto;
+}
+
+.academy-logo {
+  height: 4em;
+  text-align: right;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
