@@ -8,7 +8,8 @@ media_folder: "assets/images/uploads"
 
 collections:
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
-    label: "Project" # Used in the UI
+    label: "Projects" # Used in the UI
+    label_singular: "Project" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -17,7 +18,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Tags",
           name: "tags",
@@ -33,3 +33,4 @@ collections:
               "Visualization",
             ],
         }
+      - { label: "Body", name: "body", widget: "markdown" }
