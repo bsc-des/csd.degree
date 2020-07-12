@@ -4,6 +4,11 @@
 {%- include head.html -%}
 
 <body>
+  <script type="text/javascript">
+    {% if page.hideNav %} window.hideNav = true;
+    {% else %} window.hideNav = false;
+    {% endif %}
+  </script>
 
   {%- include header.html -%}
 

@@ -1,8 +1,25 @@
 .project-item {
-  display: block;
-  width: 300px;
+  // display: block;
+  // width: 300px;
+  // background-color: #dddddd;
+  text-align: right;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
 }
 
-.project-item .thumbnail {
-  width: 100%;
+.grid-brick {
+  margin-top: 2em;
+}
+
+.projects-container {
+  margin-bottom: 5em;
 }

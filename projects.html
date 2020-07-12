@@ -4,51 +4,31 @@ title: פרויקטים
 permalink: /projects/
 ---
 
-<div>
-  {% if site.paginate %} {% assign posts = paginator.posts %} {% else %} {%
-  assign posts = site.posts %} {% endif %} {%- if posts.size > 0 -%} {%- if
-  page.list_title -%}
-  <h2 class="post-list-heading">{{ page.list_title }}</h2>
-  {%- endif -%}
-  <ul class="project-list">
-    {%- assign date_format = "%Y" -%} {%- for post in posts -%}
-    <li class="project-item" data-groups="{{ post.tags | jsonify}}">
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        <img src="{{ post.thumbnail }}" class="thumbnail" /> {{ post.title |
-        escape }}
-      </a>
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-    </li>
-    {%- endfor -%}
-  </ul>
+<style>
+  /* Allow bootstrap grid elements to fit on mobile */
+  @media (max-width: 575px) {
+    .row > [class*="col-"] {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+</style>
 
-  {% if site.paginate %}
-  <div class="pager">
-    <ul class="pagination">
-      {%- if paginator.previous_page %}
-      <li>
-        <a
-          href="{{ paginator.previous_page_path | relative_url }}"
-          class="previous-page"
-          >{{ paginator.previous_page }}</a
-        >
-      </li>
-      {%- else %}
-      <li><div class="pager-edge">•</div></li>
-      {%- endif %}
-      <li><div class="current-page">{{ paginator.page }}</div></li>
-      {%- if paginator.next_page %}
-      <li>
-        <a
-          href="{{ paginator.next_page_path | relative_url }}"
-          class="next-page"
-          >{{ paginator.next_page }}</a
-        >
-      </li>
-      {%- else %}
-      <li><div class="pager-edge">•</div></li>
-      {%- endif %}
-    </ul>
+<div class="container mb-4">
+  <div id="shuffle-grid" class="projects-container row">
+    {%- for post in site.posts -%}
+    <div
+      class="grid-brick mt-3 col-6 col-md-4 col-xl-3"
+      data-groups="{{ post.tags | jsonify}}"
+    >
+      <div class="project-item">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.thumbnail }}" class="thumbnail" />
+          {{ post.title | escape }}
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-1 sizer-element"></div>
   </div>
-  {%- endif %} {%- endif -%}
 </div>

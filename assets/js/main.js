@@ -6,8 +6,15 @@ window.onscroll = onScroll;
 
 function onLoad() {
   floatingNav = document.getElementById("floating-nav");
-  console.log(floatingNav);
   onScroll();
+
+  var shuffleGrid = document.getElementById("shuffle-grid");
+  if (shuffleGrid) {
+    window.shuffleInstance = new window.Shuffle(shuffleGrid, {
+      itemSelector: ".grid-brick",
+      sizer: ".sizer-element",
+    });
+  }
 }
 
 function onScroll() {
