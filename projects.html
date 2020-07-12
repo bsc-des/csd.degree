@@ -14,18 +14,19 @@ permalink: /projects/
   }
 </style>
 
-<div class="filter-tags">
+<div class="filter-tags filter-options">
   {%- for tag in site.data.tags -%}
-  <div class="button">{{ tag | escape }}</div>
+  <div class="button" data-group="{{ tag | escape }}">{{ tag | escape }}</div>
   {% endfor %}
 </div>
 
 <div class="container mb-4">
   <div id="shuffle-grid" class="projects-container row">
     {%- for post in site.posts -%}
+    <!-- prettier-ignore -->
     <div
       class="grid-brick mt-3 col-6 col-md-4 col-xl-3"
-      data-groups="{{ post.tags | jsonify}}"
+      data-groups='{{ post.tags | jsonify}}'
     >
       <div class="project-item">
         <a href="{{ post.url | relative_url }}">
