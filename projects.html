@@ -12,7 +12,7 @@ permalink: /projects/
   {%- endif -%}
   <ul class="project-list">
     {%- assign date_format = "%Y" -%} {%- for post in posts -%}
-    <li class="project-item">
+    <li class="project-item" data-groups="{{ post.tags | jsonify}}">
       <a class="post-link" href="{{ post.url | relative_url }}">
         <img src="{{ post.thumbnail }}" class="thumbnail" /> {{ post.title |
         escape }}

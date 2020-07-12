@@ -5,8 +5,10 @@
   {%- include nav.html -%}
 </header>
 
-{% if page.hideNav %}
 <script type="text/javascript">
+  {% if page.hideNav %}
   window.hideNav = true;
+  {% else %}
+  window.hideNav = false;
+  {% endif %}
 </script>
-{% endif %}
