@@ -8,6 +8,10 @@ function onLoad() {
   floatingNav = document.getElementById("floating-nav");
   onScroll();
 
+  setupShuffle();
+}
+
+function setupShuffle() {
   var shuffleGrid = document.getElementById("shuffle-grid");
   if (shuffleGrid) {
     window.shuffleInstance = new window.Shuffle(shuffleGrid, {
