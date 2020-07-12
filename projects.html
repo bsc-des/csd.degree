@@ -8,11 +8,17 @@ permalink: /projects/
   /* Allow bootstrap grid elements to fit on mobile */
   @media (max-width: 575px) {
     .row > [class*="col-"] {
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 </style>
+
+<div class="filter-tags">
+  {%- for tag in site.data.tags -%}
+  <div class="button">{{ tag | escape }}</div>
+  {% endfor %}
+</div>
 
 <div class="container mb-4">
   <div id="shuffle-grid" class="projects-container row">

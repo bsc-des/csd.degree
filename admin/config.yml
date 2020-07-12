@@ -1,3 +1,5 @@
+---
+---
 backend:
   name: github
   repo: bsc-des/bsc-des.github.io
@@ -30,14 +32,7 @@ collections:
           name: "tags",
           widget: "select",
           multiple: true,
-          options:
-            [
-              "תקשורת חזותית",
-              "אנימציה",
-              "עיצוב תעשייתי",
-              "קרמיקה וזכוכית",
-              "Machine Learning",
-              "Visualization",
-            ],
+          # prettier-ignore
+          options: {{ site.data.tags | jsonify }},
         }
       - { label: "Body", name: "body", widget: "markdown" }

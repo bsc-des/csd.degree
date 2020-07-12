@@ -54,6 +54,7 @@ h1 {
   line-height: 1.3em;
   z-index: 10;
   position: relative;
+  margin: 0.4em auto;
 }
 
 h2 {
@@ -69,11 +70,21 @@ h2 {
   text-decoration: none;
   padding: 0.5em 1em;
   border-radius: 2px;
-  margin: 1em;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: background-color 300ms ease;
 
   .material-icons {
     vertical-align: bottom;
     margin-left: -0.3em;
+  }
+
+  &:hover {
+    background-color: #777;
+  }
+
+  &.active {
+    background-color: red;
   }
 }
 
