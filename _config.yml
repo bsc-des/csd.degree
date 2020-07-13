@@ -32,6 +32,17 @@ github_username: bsc-des
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-minimagick
+
+mini_magick:
+  thumbnail: # Preset name
+    source: /images/uploads # source directory - change this to whatever you want
+    destination: /images/thumbnails # generated destination directory
+    resize: "100x70^" # standard imagemagick options - you can chain multiple commands
+    gravity: "center"
+    extent: "100x70"
+#
+#
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
