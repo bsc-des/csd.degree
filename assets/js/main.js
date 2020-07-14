@@ -28,8 +28,8 @@ function setupShuffle() {
       sizer: ".sizer-element",
       isCentered: true,
     });
+    setupFilterButtons();
   }
-  setupFilterButtons();
 }
 
 function setupFilterButtons() {

@@ -1,5 +1,6 @@
 $text-color: #444444;
 $bg-color: #ddddd;
+$mobile-width: 700px;
 
 @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
 
@@ -90,9 +91,21 @@ h2 {
 
 .columns {
   display: flex;
+
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+
+  & > div {
+    padding: 2em;
+    flex: 1 1 0px;
+  }
 }
 
-.columns > div {
-  padding: 2em;
-  flex: 1 1 0px;
+.headline {
+  font-size: 2em;
+  color: $text-color;
+  line-height: 1.1em;
+  width: 90%;
+  margin: 0.5em auto;
 }
