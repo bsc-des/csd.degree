@@ -1,22 +1,44 @@
 const menuScrollThreshold = 150;
-let floatingNavEl;
+let mainNavEl;
+let isMobileNavOpen = false;
+let mobileNavToggles;
 
 window.addEventListener("load", onLoad);
 window.onscroll = onScroll;
 // document.addEventListener('DOMContentLoaded', onLoad);
 
 function onLoad() {
-  floatingNavEl = document.getElementById("floating-nav");
-  onScroll();
+  // Navigation menu logic
+  mainNavEl = document.getElementById("main-nav");
+  mobileNavToggles = document.getElementsByClassName("nav-toggle");
+  for (let item of mobileNavToggles) {
+    item.addEventListener("click", toggleMobileNav);
+  }
 
+  onScroll();
   setupShuffle();
 }
 
+function toggleMobileNav() {
+  var navLinks = mainNavEl.getElementsByClassName("nav-links")[0];
+  if (isMobileNavOpen) {
+    navLinks.classList.remove("mobile-visible");
+    for (let item of mobileNavToggles)
+      item.firstElementChild.innerHTML = "menu";
+  } else {
+    navLinks.classList.add("mobile-visible");
+    for (let item of mobileNavToggles)
+      item.firstElementChild.innerHTML = "close";
+  }
+
+  isMobileNavOpen = !isMobileNavOpen;
+}
+
 function onScroll() {
-  if (window.hideNav && floatingNavEl) {
+  if (window.hideNav && mainNavEl) {
     if (document.documentElement.scrollTop > menuScrollThreshold)
-      floatingNavEl.classList.remove("hidden");
-    else floatingNavEl.classList.add("hidden");
+      mainNavEl.classList.remove("hidden");
+    else mainNavEl.classList.add("hidden");
   }
 }
 
