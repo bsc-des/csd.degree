@@ -38,6 +38,10 @@
 .filter-options {
   margin-top: 1em;
 
+  &.active .button {
+    opacity: 0.7;
+  }
+
   .button {
     font-size: 0.8em;
     padding: 0 1em;
@@ -47,12 +51,15 @@
     color: #777;
 
     &:hover {
-      background-color: #bbb;
+      background-color: #ccc;
+      opacity: 1 !important;
     }
 
     &.active {
-      background-color: #777;
-      color: #fff;
+      // background-color: #777;
+      // color: #fff;
+      background-color: #ccc;
+      opacity: 1;
     }
   }
 }

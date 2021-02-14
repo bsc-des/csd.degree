@@ -68,11 +68,14 @@ function handleFilterClick(e) {
   const isActive = btn.classList.contains("active");
   const btnGroup = btn.getAttribute("data-group");
 
+  btn.parentNode.classList.add("active");
+
   removeActiveClassFromChildren(btn.parentNode);
 
   let filterGroup;
   if (isActive) {
     btn.classList.remove("active");
+    btn.parentNode.classList.remove("active");
     filterGroup = Shuffle.ALL_ITEMS;
   } else {
     btn.classList.add("active");
