@@ -146,7 +146,9 @@ function init() {
 
 function onWindowResize(event) {
   const w = window.innerWidth;
-  const h = container.offsetHeight + 80;
+  // const margin = parseInt(window.getComputedStyle(container).marginBottom);
+  const margin = container.offsetTop;
+  const h = container.offsetHeight + margin;
   renderer.setSize(w, h);
   uniforms.u_resolution.value.x = w;
   uniforms.u_resolution.value.y = h;
