@@ -1,3 +1,4 @@
+{% raw %}
 ---
 ---
 backend:
@@ -63,3 +64,5 @@ collections:
           options: {{ site.data.faq_categories | jsonify }},
         }
       - { label: "Body", name: "body", widget: "markdown" }
+
+{% endraw %}
