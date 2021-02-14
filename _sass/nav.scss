@@ -96,11 +96,13 @@ $mobile-nav-height: 45px;
 }
 
 .logo {
-  background-color: $text-color;
-  width: 1.25em;
-  height: 1.25em;
-  display: inline-block;
-  vertical-align: middle;
+  margin-left: 3em !important;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.6em;
+  }
 }
 
 .dark {
@@ -119,9 +121,5 @@ $mobile-nav-height: 45px;
 
   .nav-links > a:hover {
     background-color: rgba(255, 255, 255, 0.25);
-  }
-
-  .main-nav .logo {
-    background-color: #fff;
   }
 }
