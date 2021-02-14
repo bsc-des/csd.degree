@@ -5,17 +5,6 @@ permalink: /faq/
 ---
 
 <div class="content">
-  <p class="headline">
-    פה תוכלו לראות פרויקטים שנעשו במסגרת התוכנית לאורך השנים. ניתן לסנן את
-    הפרויקטים לפי תגיות.
-  </p>
-
-  <div class="filter-tags filter-options">
-    {%- for tag in site.data.tags -%}
-    <div class="button" data-group="{{ tag | escape }}">{{ tag | escape }}</div>
-    {% endfor %}
-  </div>
-
   {%- for question in site.faq -%}
   <!-- prettier-ignore -->
   <div>
