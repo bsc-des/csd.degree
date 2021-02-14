@@ -7,11 +7,16 @@ permalink: /faq/
 <div class="content">
   {%- for post in site.posts -%} {% if post.path contains 'faq' %}
   <!-- prettier-ignore -->
-  <div>
-    <div class="faq">
-      {{ post.title | escape }}
-      {{ post.content }}
+  <div id="faq">
+    <div class="faq-item accordion-item">
+      <div class="header">{{ post.title | escape }}</div>
+      <div class="body"><div class="body-text">{{ post.content }}</div></div>
     </div>
   </div>
   {% endif %}{% endfor %}
 </div>
+
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript">
+  accordion("faq");
+</script>

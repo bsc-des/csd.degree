@@ -1,0 +1,19 @@
+.faq-item {
+  padding: 1em 2em;
+
+  .header {
+    text-align: right;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .body {
+    height: 0;
+    overflow: hidden;
+    transition: 250ms ease height;
+  }
+
+  .body-text {
+    margin-top: -1em;
+    padding-top: 1em;
+  }
+}
