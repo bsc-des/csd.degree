@@ -8,7 +8,7 @@ backend:
 
 media_folder: "assets/images/uploads"
 
-logo_url: "assets/images/logo.svg"
+logo_url: "/assets/images/logo.svg"
 
 collections:
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
@@ -36,5 +36,30 @@ collections:
           multiple: true,
           # prettier-ignore
           options: {{ site.data.tags | jsonify }},
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "faq" # Used in routes, e.g., /admin/collections/blog
+    label: "Questions" # Used in the UI
+    label_singular: "Question" # Used in the UI
+    folder: "_faq" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - {
+          label: "Permalink",
+          name: "permalink",
+          widget: "hidden",
+          default: "projects/:title",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          multiple: false,
+          # prettier-ignore
+          options: {{ site.data.faq_categories | jsonify }},
         }
       - { label: "Body", name: "body", widget: "markdown" }
