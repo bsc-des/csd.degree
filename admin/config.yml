@@ -14,7 +14,7 @@ collections:
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects" # Used in the UI
     label_singular: "Project" # Used in the UI
-    folder: "_posts" # The path to the folder where the documents are stored
+    folder: "_posts/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     # prettier-ignore
     slug: {% raw %}"{{year}}-{{month}}-{{day}}-{{slug}}"{% endraw %}
@@ -42,7 +42,7 @@ collections:
   - name: "faq" # Used in routes, e.g., /admin/collections/blog
     label: "Questions" # Used in the UI
     label_singular: "Question" # Used in the UI
-    folder: "_faq" # The path to the folder where the documents are stored
+    folder: "_posts/faq" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: {% raw %}"{{year}}-{{month}}-{{day}}-{{slug}}"{% endraw %}
     fields: # The fields for each document, usually in front matter
