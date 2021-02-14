@@ -62,7 +62,7 @@ $mobile-nav-height: 45px;
 
 .nav-links > a {
   padding: 0.4em 1em;
-  margin: 0 1em;
+  margin: 0 0.6em;
   text-decoration: none;
   color: $text-color;
   font-weight: bold;
@@ -98,10 +98,15 @@ $mobile-nav-height: 45px;
 .logo {
   margin-left: 3em !important;
 
-  img {
-    display: inline-block;
-    vertical-align: middle;
-    height: 1.6em;
+  width: 4em;
+  height: 1.6em;
+  vertical-align: middle;
+  display: inline-block;
+  background: url(/assets/images/logo.svg) no-repeat !important;
+  background-size: cover;
+
+  @media screen and (max-width: $mobile-width) {
+    margin: 2em auto !important;
   }
 }
 
@@ -121,5 +126,9 @@ $mobile-nav-height: 45px;
 
   .nav-links > a:hover {
     background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .logo {
+    background-image: url(/assets/images/logo-white.svg) !important;
   }
 }

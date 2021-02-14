@@ -34,3 +34,25 @@
 .projects-container {
   margin-bottom: 5em;
 }
+
+.filter-options {
+  margin-top: 1em;
+
+  .button {
+    font-size: 0.8em;
+    padding: 0 1em;
+    border-radius: 3em;
+    margin: 0.2em;
+    background-color: #ddd;
+    color: #777;
+
+    &:hover {
+      background-color: #bbb;
+    }
+
+    &.active {
+      background-color: #777;
+      color: #fff;
+    }
+  }
+}

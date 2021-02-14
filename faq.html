@@ -5,7 +5,10 @@ permalink: /faq/
 ---
 
 <div class="content">
-  {%- for post in site.posts -%} {% if post.path contains 'faq' %}
+  {%- for category in site.data.faq_categories -%}
+  <h2>{{ category | escape }}</h2>
+
+  {%- for post in site.posts -%} {% if post.category == category %}
   <!-- prettier-ignore -->
   <div id="faq">
     <div class="faq-item accordion-item">
@@ -13,7 +16,7 @@ permalink: /faq/
       <div class="body"><div class="body-text">{{ post.content }}</div></div>
     </div>
   </div>
-  {% endif %}{% endfor %}
+  {% endif %}{% endfor %} {% endfor%}
 </div>
 
 <script type="text/javascript" src="/assets/js/accordion.js"></script>
