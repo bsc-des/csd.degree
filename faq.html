@@ -5,12 +5,13 @@ permalink: /faq/
 ---
 
 <div class="content">
-  {%- for question in site.faq -%}
+  {%- for post in site.posts -%} {% if post.path contains 'faq' %}
   <!-- prettier-ignore -->
   <div>
     <div class="faq">
-      {{ question.title | escape }}
+      {{ post.title | escape }}
+      {{ post.content }}
     </div>
   </div>
-  {% endfor %}
+  {% endif %}{% endfor %}
 </div>
