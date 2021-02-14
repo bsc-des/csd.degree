@@ -37,6 +37,10 @@ img {
 
 main {
   padding-top: 80px;
+
+  @media screen and (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .ltr {
@@ -47,6 +51,8 @@ main {
   max-width: 1000px;
   margin: auto;
   position: relative;
+  box-sizing: border-box;
+  padding: 15px;
 }
 
 p {

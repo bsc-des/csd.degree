@@ -13,24 +13,24 @@ permalink: /projects/
     }
   }
 </style>
-<div class="content">
-  <p class="headline">
-    פה תוכלו לראות פרויקטים שנעשו במסגרת התוכנית לאורך השנים.
-    <br />
-    ניתן לסנן את הפרויקטים לפי תגיות.
-  </p>
 
-  <div class="filter-options">
-    {%- for tag in site.data.tags -%}
-    <div class="button" data-group="{{ tag | escape }}">{{ tag | escape }}</div>
-    {% endfor %}
-  </div>
+<p class="headline">
+  פה תוכלו לראות פרויקטים שנעשו במסגרת התוכנית לאורך השנים.
+  <br />
+  ניתן לסנן את הפרויקטים לפי תגיות.
+</p>
 
-  <div class="container mb-4">
-    <div id="shuffle-grid" class="projects-container row">
-      {%- for post in site.posts -%} {% if post.path contains 'projects' %}
-      <!-- prettier-ignore -->
-      <div
+<div class="filter-options">
+  {%- for tag in site.data.tags -%}
+  <div class="button" data-group="{{ tag | escape }}">{{ tag | escape }}</div>
+  {% endfor %}
+</div>
+
+<div class="container mb-4">
+  <div id="shuffle-grid" class="projects-container row">
+    {%- for post in site.posts -%} {% if post.path contains 'projects' %}
+    <!-- prettier-ignore -->
+    <div
         class="grid-brick mt-3 col-6 col-md-4 col-xl-3"
         data-groups='{{ post.tags | jsonify}}'
       >
@@ -43,9 +43,8 @@ permalink: /projects/
           </a>
         </div>
       </div>
-      {% endif %} {% endfor %}
-      <div class="col-1 sizer-element"></div>
-    </div>
+    {% endif %} {% endfor %}
+    <div class="col-1 sizer-element"></div>
   </div>
 </div>
 
