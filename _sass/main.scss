@@ -36,9 +36,12 @@ img {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 60px;
 
   @media screen and (max-width: $tablet-width) {
+    padding-top: 40px;
+  }
+  @media screen and (max-width: $mobile-width) {
     padding-top: 20px;
   }
 }
@@ -57,7 +60,7 @@ main {
 
 p {
   text-align: right;
-  line-height: 1.8em;
+  line-height: 1.55em;
   color: #666666;
 }
 

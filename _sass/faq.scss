@@ -1,9 +1,8 @@
 .faq-item {
-  padding: 0.5em 2em;
-
   .header {
     text-align: right;
     font-weight: bold;
+    padding: 0.5em 2em;
     cursor: pointer;
   }
   .body {
@@ -14,6 +13,6 @@
 
   .body-text {
     margin-top: -1em;
-    padding-top: 1em;
+    padding: 1em 2em 0 2em;
   }
 }

@@ -2,7 +2,7 @@
   background-color: $text-color;
   color: #fff;
   padding-bottom: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   overflow: hidden;
 
   h1 {
@@ -21,12 +21,20 @@
 .title-right {
   text-align: left;
   margin-left: 45%;
+
+  @media screen and (max-width: $mobile-width) {
+    margin-left: 5%;
+  }
 }
 
 .title-left {
   direction: ltr;
   text-align: right;
   margin-right: 45%;
+
+  @media screen and (max-width: $mobile-width) {
+    margin-right: 5%;
+  }
 }
 
 .academy-logo {
