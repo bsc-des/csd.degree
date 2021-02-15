@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: התוכנית
 permalink: /about/
 ---
 
-This is the about page
+**אין בנאמר בעמוד זה להחליף את המידע באתרים הרשמיים. המטרה היא לתת רקע למבנה התוכנית ולדרישות באופן כללי.**
