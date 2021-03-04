@@ -55,7 +55,7 @@ main {
   margin: auto;
   position: relative;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 1.5em;
 }
 
 p {
@@ -109,7 +109,6 @@ h2 {
   }
 
   & > div {
-    padding: 1em 2em;
     flex: 1 1 0px;
   }
 }

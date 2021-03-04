@@ -2,8 +2,12 @@
   .header {
     text-align: right;
     font-weight: bold;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
     cursor: pointer;
+
+    @media screen and (max-width: $mobile-width) {
+      padding: 0.5em 1em;
+    }
   }
   .body {
     height: 0;
@@ -13,6 +17,10 @@
 
   .body-text {
     margin-top: -1em;
-    padding: 0.5em 1em 0 0.5em;
+    padding: 1em 2em 0 1em;
+
+    @media screen and (max-width: $mobile-width) {
+      padding: 0.5em 1em 0 0.5em;
+    }
   }
 }

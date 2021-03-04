@@ -49,6 +49,8 @@
     margin: 0.2em;
     background-color: #ddd;
     color: #777;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
       background-color: #ccc;
