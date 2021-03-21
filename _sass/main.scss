@@ -110,6 +110,11 @@ h2 {
 
   & > div {
     flex: 1 1 0px;
+    padding: 0 1em;
+
+    @media screen and (max-width: $mobile-width) {
+      padding: 0;
+    }
   }
 }
 
