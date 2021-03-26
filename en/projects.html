@@ -1,0 +1,52 @@
+---
+layout: page
+title: projects
+lang: en
+permalink: /en/projects/
+---
+
+<style>
+  /* Allow bootstrap grid elements to fit on mobile */
+  @media (max-width: 575px) {
+    .row > [class*="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+</style>
+
+<p class="headline">
+  פה תוכלו לראות פרויקטים שנעשו במסגרת התוכנית לאורך השנים.
+  <br />
+  ניתן לסנן את הפרויקטים לפי תגיות. HEEE
+</p>
+
+<div class="filter-options">
+  {%- for tag in site.data.tags -%}
+  <div class="button" data-group="{{ tag | escape }}">{{ tag | escape }}</div>
+  {% endfor %}
+</div>
+
+<div class="container mb-4">
+  <div id="shuffle-grid" class="projects-container row">
+    {%- for post in site.posts -%} {% if post.path contains 'projects' %}
+    <!-- prettier-ignore -->
+    <div
+        class="grid-brick mt-3 col-6 col-md-4 col-xl-3"
+        data-groups='{{ post.tags | jsonify}}'
+      >
+        <div class="project-item">
+
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.thumbnail }}" class="thumbnail" />
+            <div>{{ post.title | escape }}</div>
+            <div class="author">{{ post.author | escape }}</div>
+          </a>
+        </div>
+      </div>
+    {% endif %} {% endfor %}
+    <div class="col-1 sizer-element"></div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/assets/js/shuffle.js"></script>

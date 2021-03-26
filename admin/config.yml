@@ -67,22 +67,40 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Home Page"
+      - label: "Home"
         name: "home"
         file: "index.html"
         fields:
-          - {label: "Title", name: "title", widget: "hidden", default: "home" }
           - {label: "Intro", name: "intro", widget: "markdown"}
           - {label: "HUJI", name: "huji", widget: "markdown"}
           - {label: "Bezalel", name: "bezalel", widget: "markdown"}
+      - label: "Projects"
+        name: "projects"
+        file: "projects.html"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "About"
+        name: "about"
+        file: "about.html"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "contact.html"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages-en"
     label: "Pages English"
     files:
-      - label: "Home Page"
+      - label: "Home"
         name: "home"
         file: "en/index.html"
         fields:
-          - {label: "Title", name: "title", widget: "hidden", default: "home" }
           - {label: "Intro", name: "intro", widget: "markdown"}
           - {label: "HUJI", name: "huji", widget: "markdown"}
           - {label: "Bezalel", name: "bezalel", widget: "markdown"}
+      - label: "Projects"
+        name: "projects"
+        file: "en/projects.html"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
