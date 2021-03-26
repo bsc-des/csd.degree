@@ -78,7 +78,7 @@ collections:
         name: "projects"
         file: "projects.html"
         fields:
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Text", name: "text", widget: "markdown" }
       - label: "About"
         name: "about"
         file: "about.md"
@@ -103,4 +103,4 @@ collections:
         name: "projects"
         file: "en/projects.html"
         fields:
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Text", name: "text", widget: "markdown" }
