@@ -29,6 +29,14 @@ hideNav: true
     מוסדות הלימוד והמסגרת החברתית המיוחדת שנוצרת בין חברי התכנית מבטיחים מסלול
     לימודים מרתק וחוויתי.
   </p>
+  <p class="headline">
+    {{ site.html_pages }}
+    <!-- prettier-ignore -->
+    {%- for file in site.files -%}
+    <!-- prettier-ignore -->
+    {{ file.title | escape }}
+    {% endfor %}
+  </p>
   <div class="columns">
     <div>
       <h2>
