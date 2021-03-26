@@ -69,7 +69,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "site/content/about.yml"
+        file: "_posts/pages/home.yml"
         fields:
           - {label: Intro, name: intro, widget: markdown}
           - {label: HUJI, name: huji, widget: markdown}
