@@ -69,7 +69,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "pages/home.yml"
+        file: "index.html"
         fields:
           - {label: "Title", name: "title", widget: "hidden", default: "home" }
           - {label: "Intro", name: "intro", widget: "markdown"}

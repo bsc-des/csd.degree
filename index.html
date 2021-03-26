@@ -30,12 +30,7 @@ hideNav: true
     לימודים מרתק וחוויתי.
   </p>
   <p class="headline">
-    {{ site.html_pages }}
-    <!-- prettier-ignore -->
-    {%- for file in site.files -%}
-    <!-- prettier-ignore -->
-    {{ file.title | escape }}
-    {% endfor %}
+    {{ page.intro }}
   </p>
   <div class="columns">
     <div>
