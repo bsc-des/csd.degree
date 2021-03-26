@@ -67,7 +67,7 @@ collections:
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Used in the UI
     files:
-    - label: "Home Page"
+      - label: "Home Page"
         name: "home"
         file: "site/content/about.yml"
         fields:
