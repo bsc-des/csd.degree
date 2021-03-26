@@ -24,6 +24,14 @@ body {
 
   &.en {
     direction: ltr;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4 {
+      text-align: left;
+    }
   }
 
   @media screen and (max-width: $tablet-width) {

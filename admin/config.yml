@@ -76,7 +76,7 @@ collections:
           - {label: "HUJI", name: "huji", widget: "markdown"}
           - {label: "Bezalel", name: "bezalel", widget: "markdown"}
   - name: "pages-en"
-    label: "Pages EN"
+    label: "Pages English"
     files:
       - label: "Home Page"
         name: "home"
