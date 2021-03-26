@@ -43,6 +43,13 @@ footer {
   padding: 1em;
   color: #ccc;
   font-size: 0.8em;
+  a {
+    color: #ccc;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 img {
