@@ -64,3 +64,13 @@ collections:
           options: {{ site.data.faq_categories | jsonify }},
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    files:
+    - label: "Home Page"
+        name: "home"
+        file: "site/content/about.yml"
+        fields:
+          - {label: Intro, name: intro, widget: markdown}
+          - {label: HUJI, name: huji, widget: markdown}
+          - {label: Bezalel, name: bezalel, widget: markdown}
