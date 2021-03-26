@@ -19,7 +19,7 @@
 }
 
 .title-right {
-  text-align: left;
+  text-align: left !important;
   margin-left: 45%;
 
   @media screen and (max-width: $mobile-width) {
@@ -29,7 +29,7 @@
 
 .title-left {
   direction: ltr;
-  text-align: right;
+  text-align: right !important;
   margin-right: 45%;
 
   @media screen and (max-width: $mobile-width) {

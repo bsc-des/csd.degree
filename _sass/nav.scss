@@ -20,7 +20,7 @@ $mobile-nav-height: 45px;
 
 .main-nav {
   width: 100%;
-  margin: 0;
+  margin: auto;
   top: 0;
   display: flex;
   padding: 1em;
@@ -35,6 +35,11 @@ $mobile-nav-height: 45px;
 
 .nav-links {
   z-index: 10;
+  max-width: 800px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
 
   @media screen and (max-width: $mobile-width) {
     display: none;
@@ -99,8 +104,17 @@ $mobile-nav-height: 45px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.en .logo {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+
+  @media screen and (max-width: $mobile-width) {
+    margin: 2em auto !important;
+  }
+}
+
 .logo {
-  margin: 0 3em !important;
+  // margin: 0 3em !important;
 
   width: 4em;
   height: 1.6em;
@@ -108,6 +122,7 @@ $mobile-nav-height: 45px;
   display: inline-block;
   background: url(/assets/images/logo.svg) no-repeat !important;
   background-size: cover;
+  margin-left: auto !important;
 
   @media screen and (max-width: $mobile-width) {
     margin: 2em auto !important;
@@ -119,6 +134,7 @@ $mobile-nav-height: 45px;
 
   .main-nav {
     position: absolute;
+    max-width: 100%;
   }
 
   .nav-links > a {
@@ -133,8 +149,6 @@ $mobile-nav-height: 45px;
   }
 
   .logo {
-    margin: 1em 3em !important;
-
     background-image: url(/assets/images/logo-white.svg) !important;
   }
 }
