@@ -145,7 +145,8 @@ function init() {
 }
 
 function onWindowResize(event) {
-  const w = window.innerWidth;
+  const w = container.offsetWidth;
+  console.log(w);
   // const margin = parseInt(window.getComputedStyle(container).marginBottom);
   const margin = container.offsetTop;
   const h = container.offsetHeight + margin;
