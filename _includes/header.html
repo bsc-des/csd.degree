@@ -2,5 +2,6 @@
   class="floating-nav {% if page.hideNav %}hidden{% endif %}"
   id="main-nav"
 >
-  {%- include nav.html -%}
+  {% if page.lang == "he" %} {%- include nav-en.html -%} {% else %} {%- include
+  nav-en.html -%} {% endif %}
 </header>

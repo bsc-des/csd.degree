@@ -75,3 +75,14 @@ collections:
           - {label: "Intro", name: "intro", widget: "markdown"}
           - {label: "HUJI", name: "huji", widget: "markdown"}
           - {label: "Bezalel", name: "bezalel", widget: "markdown"}
+  - name: "pages-en"
+    label: "Pages EN"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "en/index.html"
+        fields:
+          - {label: "Title", name: "title", widget: "hidden", default: "home" }
+          - {label: "Intro", name: "intro", widget: "markdown"}
+          - {label: "HUJI", name: "huji", widget: "markdown"}
+          - {label: "Bezalel", name: "bezalel", widget: "markdown"}

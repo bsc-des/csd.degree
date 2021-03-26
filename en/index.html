@@ -1,5 +1,6 @@
 ---
 layout: default
+lang: en
 hideNav: true
 intro: >+
   התכנית המשולבת מיועדת למי שנמשך לעולמות העיצוב והטכנולוגיה, והקשר שביניהם.
@@ -26,21 +27,22 @@ bezalel: >-
 ---
 
 <div class="dark">
-  {%- include nav.html -%}
+  {% if page.lang == "he" %} {%- include nav-en.html -%} {% else %} {%- include
+  nav-en.html -%} {% endif %}
 </div>
 
 <div class="hero" id="hero">
+  <h1 class="title-left">
+    Computer Science
+    <br />
+    & Design
+  </h1>
   <h1 class="title-right">
     התוכנית המשולבת
     <br />
     מדעי המחשב
     <br />
     ועיצוב
-  </h1>
-  <h1 class="title-left">
-    Computer Science
-    <br />
-    & Design
   </h1>
 </div>
 
