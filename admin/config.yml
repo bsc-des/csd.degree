@@ -81,12 +81,12 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "About"
         name: "about"
-        file: "about.html"
+        file: "about.md"
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
-        file: "contact.html"
+        file: "contact.md"
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages-en"
