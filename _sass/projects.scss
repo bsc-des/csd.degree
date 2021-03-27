@@ -36,7 +36,7 @@
 }
 
 .filter-options {
-  margin-top: 1em;
+  margin-top: 2em;
 
   &.active .button {
     opacity: 0.5;
@@ -46,7 +46,7 @@
     font-size: 0.8em;
     padding: 0 1em;
     border-radius: 3em;
-    margin: 0.2em;
+    margin: 0.2em 0;
     background-color: #ddd;
     color: #777;
     user-select: none;
@@ -63,22 +63,5 @@
       background-color: #ccc;
       opacity: 1;
     }
-  }
-}
-
-.project-page {
-  direction: ltr;
-  text-align: left;
-
-  p,
-  h1,
-  h2,
-  h3,
-  h4 {
-    text-align: left;
-  }
-
-  h1 {
-    margin-bottom: 0;
   }
 }

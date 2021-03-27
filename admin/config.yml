@@ -11,6 +11,56 @@ media_folder: "assets/images/uploads"
 logo_url: "/assets/images/logo.svg"
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "index.html"
+        fields:
+          - {label: "Intro", name: "intro", widget: "markdown"}
+          - {label: "HUJI", name: "huji", widget: "markdown"}
+          - {label: "Bezalel", name: "bezalel", widget: "markdown"}
+      - label: "Projects"
+        name: "projects"
+        file: "projects.html"
+        fields:
+          - { label: "Text", name: "text", widget: "markdown" }
+      - label: "About"
+        name: "about"
+        file: "about.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "contact.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages-en"
+    label: "Pages English"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "en/index.html"
+        fields:
+          - {label: "Intro", name: "intro", widget: "markdown"}
+          - {label: "HUJI", name: "huji", widget: "markdown"}
+          - {label: "Bezalel", name: "bezalel", widget: "markdown"}
+      - label: "Projects"
+        name: "projects"
+        file: "en/projects.html"
+        fields:
+          - { label: "Text", name: "text", widget: "markdown" }
+      - label: "About"
+        name: "about"
+        file: "en/about.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "en/contact.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects" # Used in the UI
     label_singular: "Project" # Used in the UI
@@ -64,53 +114,3 @@ collections:
           options: {{ site.data.faq_categories | jsonify }},
         }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "index.html"
-        fields:
-          - {label: "Intro", name: "intro", widget: "markdown"}
-          - {label: "HUJI", name: "huji", widget: "markdown"}
-          - {label: "Bezalel", name: "bezalel", widget: "markdown"}
-      - label: "Projects"
-        name: "projects"
-        file: "projects.html"
-        fields:
-          - { label: "Text", name: "text", widget: "markdown" }
-      - label: "About"
-        name: "about"
-        file: "about.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Contact"
-        name: "contact"
-        file: "contact.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages-en"
-    label: "Pages English"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "en/index.html"
-        fields:
-          - {label: "Intro", name: "intro", widget: "markdown"}
-          - {label: "HUJI", name: "huji", widget: "markdown"}
-          - {label: "Bezalel", name: "bezalel", widget: "markdown"}
-      - label: "Projects"
-        name: "projects"
-        file: "en/projects.html"
-        fields:
-          - { label: "Text", name: "text", widget: "markdown" }
-      - label: "About"
-        name: "about"
-        file: "en/about.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Contact"
-        name: "contact"
-        file: "en/contact.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
