@@ -120,12 +120,53 @@ $mobile-nav-height: 45px;
   height: 1.6em;
   vertical-align: middle;
   display: inline-block;
-  background: url(/assets/images/logo.svg) no-repeat !important;
+  background: url(/assets/images/logo-m.svg) no-repeat !important;
   background-size: cover;
   margin-left: auto !important;
+  mix-blend-mode: multiply;
+  position: relative;
+  // background-blend-mode: multiply;
 
   @media screen and (max-width: $mobile-width) {
     margin: 2em auto !important;
+  }
+
+  &::before {
+    background: url(/assets/images/logo-y.svg) no-repeat;
+  }
+  &::after {
+    background: url(/assets/images/logo-c.svg) no-repeat;
+  }
+
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    transition: transform 250ms ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      transform: translate(-0.4em, -0.4em);
+    }
+    &::after {
+      transform: translate(0.4em, 0.4em);
+    }
+  }
+
+  &:active {
+    &::before {
+      transform: translate(-0.2em, -0.2em);
+    }
+    &::after {
+      transform: translate(0.2em, 0.2em);
+    }
   }
 }
 
@@ -149,6 +190,21 @@ $mobile-nav-height: 45px;
   }
 
   .logo {
-    background-image: url(/assets/images/logo-white.svg) !important;
+    // background-image: url(/assets/images/logo-white.svg) !important;
+    background: url(/assets/images/logo-g.svg) no-repeat !important;
+
+    &::before {
+      background: url(/assets/images/logo-r.svg) no-repeat;
+    }
+
+    &::after {
+      background: url(/assets/images/logo-b.svg) no-repeat;
+    }
+
+    mix-blend-mode: screen;
+    &::before,
+    &::after {
+      mix-blend-mode: screen;
+    }
   }
 }
