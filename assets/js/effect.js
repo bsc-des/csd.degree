@@ -68,6 +68,9 @@ vec3 contours(float x, float levels) {
 vec3 contour_fill(float x, float levels) {
   float c = floor(x*levels) / levels;
   vec3 color = vec3(.08 - c*0.08, pow(c, 3.0), .1 + c*.9);
+  // c = c*0.6;
+  // vec3 color = vec3(c, c, c);
+
   color = color * 0.9 + 0.1;
   return color;
 }
