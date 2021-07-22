@@ -26,11 +26,6 @@ collections:
         file: "projects.html"
         fields:
           - { label: "Text", name: "text", widget: "markdown" }
-      - label: "About"
-        name: "about"
-        file: "about.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
         file: "contact.md"
@@ -51,11 +46,6 @@ collections:
         file: "en/projects.html"
         fields:
           - { label: "Text", name: "text", widget: "markdown" }
-      - label: "About"
-        name: "about"
-        file: "en/about.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
         file: "en/contact.md"
