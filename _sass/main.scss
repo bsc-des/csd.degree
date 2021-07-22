@@ -156,6 +156,8 @@ h2 {
   cursor: pointer;
   mix-blend-mode: multiply;
   border-radius: 3px;
+  opacity: 0.9;
+  transition: opacity 250ms ease;
 
   background-color: magenta;
   &::before {
@@ -180,20 +182,21 @@ h2 {
   }
 
   &:hover {
+    opacity: 1;
     &::before {
-      transform: translate(-0.4em, -0.4em);
+      transform: translate(-0.3em, -0.3em);
     }
     &::after {
-      transform: translate(0.4em, 0.4em);
+      transform: translate(-0.3em, 0.3em);
     }
   }
 
   &:active {
     &::before {
-      transform: translate(-0.2em, -0.2em);
+      transform: translate(-0.15em, -0.15em);
     }
     &::after {
-      transform: translate(0.2em, 0.2em);
+      transform: translate(-0.15em, 0.15em);
     }
   }
 }
