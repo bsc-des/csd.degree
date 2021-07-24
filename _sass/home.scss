@@ -1,6 +1,6 @@
 .hero {
-  background-color: $text-color;
-  color: #fff;
+  // background-color: $text-color;
+  // color: #fff;
   padding-bottom: 40px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -12,6 +12,7 @@
 }
 
 .hero > canvas {
+  // display: none;
   position: absolute;
   top: 0;
   left: 0;
