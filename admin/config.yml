@@ -19,14 +19,14 @@ collections:
         file: "index.html"
         fields:
           - {label: "Intro", name: "intro", widget: "markdown"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Body", name: "text", widget: "markdown"}
           - {label: "HUJI", name: "huji", widget: "markdown"}
           - {label: "Bezalel", name: "bezalel", widget: "markdown"}
       - label: "Projects"
         name: "projects"
         file: "projects.html"
         fields:
-          - { label: "Text", name: "text", widget: "markdown" }
+          - { label: "Body", name: "text", widget: "markdown" }
       - label: "Contact"
         name: "contact"
         file: "contact.md"
