@@ -47,20 +47,21 @@
     padding: 0 0.5em;
     border-radius: 3px;
     margin: 0.2em 0;
-    background-color: #ddd;
+    background-color: #eee;
     color: #777;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    transition: color 250ms ease, background-color 250ms ease;
 
     &:hover {
-      background-color: #ccc;
+      background-color: #ddd;
       opacity: 1 !important;
     }
 
     &.active {
-      // background-color: #777;
-      // color: #fff;
-      background-color: #ccc;
+      background-color: #777;
+      color: #fff;
+      // background-color: #ccc;
       opacity: 1;
     }
   }

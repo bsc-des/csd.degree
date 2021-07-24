@@ -35,7 +35,7 @@ $mobile-nav-height: 45px;
 
 .nav-links {
   z-index: 10;
-  max-width: 840px;
+  max-width: $max-width;
   display: flex;
   width: 100%;
   align-items: center;

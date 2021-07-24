@@ -26,9 +26,10 @@ text: |2-
   post.tags contains tag %}
   <div class="button" data-group="{{ tag | escape }}">{{ tag | escape }}</div>
   {% break %} {% endif %} {% endfor %} {% endfor %}
+  <div class="button" data-group="clear">X</div>
 </div>
 
-<div class="container mb-4">
+<div class="mb-4">
   <div id="shuffle-grid" class="projects-container row">
     {%- for post in site.posts -%} {% if post.path contains 'projects' %}
     <!-- prettier-ignore -->

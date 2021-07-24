@@ -2,6 +2,7 @@ $text-color: #444444;
 $bg-color: #ddddd;
 $tablet-width: 950px;
 $mobile-width: 600px;
+$max-width: 1400px;
 
 @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
 
@@ -76,12 +77,15 @@ main {
 }
 
 .content {
-  max-width: 1000px;
+  max-width: $max-width;
   margin: auto;
   position: relative;
   box-sizing: border-box;
-  padding: 1.5em;
+  padding: 1.5em 3em;
   min-height: 80vh;
+  @media screen and (max-width: $tablet-width) {
+    padding: 1.5em;
+  }
 }
 
 p {
@@ -198,5 +202,13 @@ h2 {
     &::after {
       transform: translate(-0.15em, 0.15em);
     }
+  }
+}
+
+a {
+  color: $text-color;
+
+  &:hover {
+    text-decoration: none;
   }
 }
