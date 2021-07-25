@@ -8,6 +8,7 @@ $mobile-nav-height: 45px;
   background-color: rgba(white, 0.8);
   transform: translateY(0);
   transition: transform 300ms ease;
+  backdrop-filter: blur(4px);
 }
 
 .floating-nav.hidden {
