@@ -102,6 +102,10 @@ $mobile-nav-height: 45px;
 }
 
 .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-links > a:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
