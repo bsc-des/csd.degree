@@ -43,14 +43,13 @@
     
     &.clear {
       opacity: 1;
+      pointer-events: all;
     }
   }
 
   .button.clear {
     opacity: 0;
-    border-radius: 100px;
-    width:2em;
-    height: 2em;
+    pointer-events: none;
   }
   
   .button {
