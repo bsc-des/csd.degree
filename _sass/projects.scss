@@ -40,6 +40,10 @@
 
   &.active .button {
     opacity: 0.5;
+    
+    &.clear {
+      opacity: 1;
+    }
   }
 
   .button {
