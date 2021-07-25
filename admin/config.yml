@@ -92,7 +92,7 @@ collections:
           label: "Permalink",
           name: "permalink",
           widget: "hidden",
-          default: "projects/:title",
+          default: "faq/:title",
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -105,3 +105,27 @@ collections:
           options: {{ site.data.faq_categories | jsonify }},
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "alumni" # Used in routes, e.g., /admin/collections/blog
+    label: "Alumni" # Used in the UI
+    label_singular: "Graduate" # Used in the UI
+    folder: "_posts/alumni" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    # prettier-ignore
+    slug: {% raw %}"{{year}}-{{month}}-{{day}}-{{slug}}"{% endraw %}
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - {
+          label: "Permalink",
+          name: "permalink",
+          widget: "hidden",
+          default: "alumni/:title",
+        }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Hebrew Name", name: "hebrew_name", widget: "string" }
+      - { label: "Personal Website", name: "website", widget: "string" }
+      - { label: "Instagram Account", name: "instagram", widget: "string" }
+      - { label: "Bezalel Department", name: "department", widget: "string" }
+      - { label: "Graduation Year", name: "grad_year", widget: "string" }
+      - { label: "Profile Image", name: "profile", widget: "image" }
+
+
