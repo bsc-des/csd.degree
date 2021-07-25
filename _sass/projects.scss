@@ -46,6 +46,11 @@
     }
   }
 
+  .button.clear {
+    opacity: 0;
+    border-radius: 100px;
+  }
+  
   .button {
     font-size: 0.8em;
     padding: 0 0.5em;
