@@ -26,7 +26,7 @@ text: |-2
   post.tags contains tag %}
   <div class="button" data-group="{{ tag | escape }}">{{ tag | escape }}</div>
   {% break %} {% endif %} {% endfor %} {% endfor %}
-  <div class="button clear" data-group="clear">Clear Filters</div>
+  <div class="button clear" data-group="clear">{% if page.lang == "en" %}Clear Filter{% else %}הצג הכל{% endif %}</div>
 </div>
 
 <div class="mb-4">
