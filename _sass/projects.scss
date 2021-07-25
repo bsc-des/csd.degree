@@ -55,6 +55,10 @@
     opacity: 0;
     pointer-events: none;
     background-color: transparent;
+    
+    &:hover {
+      background-color: transparent;
+    }
   }
   
   .button {
