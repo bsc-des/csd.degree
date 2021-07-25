@@ -122,8 +122,8 @@ collections:
         }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Hebrew Name", name: "hebrew_name", widget: "string" }
-      - { label: "Personal Website", name: "website", widget: "string" }
-      - { label: "Instagram Account", name: "instagram", widget: "string" }
+      - { label: "Personal Website", name: "website", widget: "string", required: false }
+      - { label: "Instagram Account", name: "instagram", widget: "string", required: false }
       - { label: "Bezalel Department", name: "department", widget: "string" }
       - { label: "Graduation Year", name: "grad_year", widget: "string" }
       - { label: "Profile Image", name: "profile", widget: "image" }
