@@ -61,6 +61,23 @@ bezalel: >-
       <h2>
         פרויקטים
       </h2>
+      <div class="projects-container row">
+        {% assign i = 0 %} {%- for post in site.posts -%} {% if post.path
+        contains 'projects' and i < 4 %} {% assign i = i | plus:1 %}
+        <!-- prettier-ignore -->
+        <div
+          class="grid-brick mt-3 col-6 col-md-4 col-xl-3"
+          data-groups='{{ post.tags | jsonify}}'
+        >
+          <div class="project-item inline">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.thumbnail }}" class="thumbnail" />
+            </a>
+          </div>
+        </div>
+        {% endif %} {% endfor %}
+      </div>
+
       <a href="/projects" class="button cmyk icon-arrow-left">
         עוד פרויקטים
         <span class="material-icons">
