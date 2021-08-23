@@ -10,6 +10,7 @@ $max-width: 1400px;
 @import "bootstrap-grid";
 @import "nav";
 @import "home";
+@import "alumni";
 @import "projects";
 @import "faq";
 
@@ -185,8 +186,8 @@ h2 {
     display: block;
     position: absolute;
     top: 0;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     mix-blend-mode: multiply;

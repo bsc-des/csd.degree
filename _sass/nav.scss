@@ -5,10 +5,10 @@ $mobile-nav-height: 45px;
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: rgba(white, 0.8);
+  background-color: rgba(white, 0.95);
   transform: translateY(0);
   transition: transform 300ms ease;
-  backdrop-filter: blur(4px);
+  // backdrop-filter: blur(4px);
 }
 
 .floating-nav.hidden {
