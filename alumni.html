@@ -30,12 +30,12 @@ permalink: /alumni/
             <div class="name">{{ post.hebrew_name | escape }}</div>
             <div>{{ post.name | escape }}</div>
             <div class="links">
-              {% if post.instagram != '' %}
+              {% if post.instagram and post.instagram.size != 0 %}
               <a href="{{ post.instagram }}" class="icon-link" target="_blank">
                 <img src="/assets/images/ui/instagram.svg" />
               </a>
               {% endif %}
-              {% if post.website != '' %}
+              {% if post.website and post.website.size != 0 %}
               <a href="{{ post.website }}" class="icon-link" target="_blank">
                 <img src="/assets/images/ui/link.svg" />
               </a>
