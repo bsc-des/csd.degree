@@ -12,7 +12,7 @@ tags:
 ---
 This platform suggests a new method of wandering in personal diaries which is not chronological necessarily, but according to different aspects as time, place, sound, emotion and topic. Lose a bit of the romance of writing diaries by hand, and adopt technology to gain a stronger experience.
 
-Guide: Amitai Gilad
+Mentor: Amitai Gilad
 
 Techniques: Machine Learning, NLP, data analysis, UI, Web Development
 
