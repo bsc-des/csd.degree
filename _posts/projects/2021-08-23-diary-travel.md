@@ -18,4 +18,4 @@ Techniques: Machine Learning, NLP, data analysis, UI, Web Development
 
 Platforms: Python, React
 
-Link: http://diary-travel.com
+Link: <http://diary-travel.com>
