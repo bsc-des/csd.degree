@@ -1,3 +1,7 @@
+.project-item-inline {
+  display: inline-block;
+}
+
 .project-item {
   // display: block;
   // width: 300px;
@@ -44,7 +48,7 @@
 
   &.active .button {
     opacity: 0.5;
-    
+
     &.clear {
       opacity: 1;
       pointer-events: all;
@@ -55,12 +59,12 @@
     opacity: 0;
     pointer-events: none;
     background-color: transparent;
-    
+
     &:hover {
       background-color: transparent;
     }
   }
-  
+
   .button {
     font-size: 0.8em;
     padding: 0 0.5em;

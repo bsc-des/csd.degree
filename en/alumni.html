@@ -1,0 +1,49 @@
+---
+layout: page
+title: alumni
+lang: en
+permalink: /en/alumni/
+---
+
+<style>
+  /* Allow bootstrap grid elements to fit on mobile */
+  @media (max-width: 575px) {
+    .row > [class*="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+</style>
+
+<!-- <p class="headline">
+  {{page.text}}
+</p> -->
+
+<div class="mb-4">
+  <div id="shuffle-grid" class="projects-container row">
+    {%- for post in site.posts -%} {% if post.path contains 'alumni' %}
+    <!-- prettier-ignore -->
+    <div
+        class="grid-brick mt-3 col-6 col-md-4 col-xl-3"
+      >
+        <div class="alumni-item">
+            <img src="{{ post.profile }}" class="profile" />
+            <div class="name">{{ post.hebrew_name | escape }}</div>
+            <div>{{ post.name | escape }}</div>
+            <div class="links">
+              {% if post.instagram and post.instagram.size != 0 %}
+              <a href="{{ post.instagram }}" class="icon-link" target="_blank">
+                <img src="/assets/images/ui/instagram.svg" />
+              </a>
+              {% endif %}
+              {% if post.website and post.website.size != 0 %}
+              <a href="{{ post.website }}" class="icon-link" target="_blank">
+                <img src="/assets/images/ui/link.svg" />
+              </a>
+              {% endif %}
+            </div>
+        </div>
+      </div>
+    {% endif %} {% endfor %}
+  </div>
+</div>

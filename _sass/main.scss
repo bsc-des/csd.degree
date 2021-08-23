@@ -25,6 +25,8 @@ body {
   overflow-y: scroll;
   direction: rtl;
 
+  font-size: 17px;
+
   @media screen and (max-width: $tablet-width) {
     font-size: 16px;
   }

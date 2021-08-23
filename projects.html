@@ -33,7 +33,8 @@ text: |-
 
 <div class="mb-4">
   <div id="shuffle-grid" class="projects-container row">
-    {%- for post in site.posts -%} {% if post.path contains 'projects' %}
+    {%- for post in site.posts limit:4 -%} {% if post.path contains 'projects'
+    %}
     <!-- prettier-ignore -->
     <div
         class="grid-brick mt-3 col-6 col-md-4 col-xl-3"
