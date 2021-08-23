@@ -4,7 +4,7 @@ permalink: projects/:title
 title: Diary-Travel
 author: Gilad Schreiber
 date: 2021-07-02T17:48:07.787Z
-thumbnail: /assets/images/uploads/diary-travel.png
+thumbnail: /assets/images/uploads/cover.jpg
 tags:
   - Visual Communication
   - Final Project
