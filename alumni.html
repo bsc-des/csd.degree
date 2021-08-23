@@ -2,9 +2,6 @@
 layout: page
 title: בוגרי התוכנית
 permalink: /alumni/
-text: |-
-  פה תוכלו לראות פרויקטים שנעשו במסגרת התוכנית לאורך השנים.
-  בלחיצה על תגיות ניתן לסנן את הפרויקטים.
 ---
 
 <style>
@@ -17,9 +14,9 @@ text: |-
   }
 </style>
 
-<p class="headline">
+<!-- <p class="headline">
   {{page.text}}
-</p>
+</p> -->
 
 <div class="mb-4">
   <div id="shuffle-grid" class="projects-container row">
@@ -36,6 +33,11 @@ text: |-
               {% if post.instagram != '' %}
               <a href="{{ post.instagram }}" class="icon-link" target="_blank">
                 <img src="/assets/images/ui/instagram.svg" />
+              </a>
+              {% endif %}
+              {% if post.website != '' %}
+              <a href="{{ post.website }}" class="icon-link" target="_blank">
+                <img src="/assets/images/ui/link.svg" />
               </a>
               {% endif %}
             </div>
