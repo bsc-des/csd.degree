@@ -39,7 +39,8 @@ collections:
         name: "home"
         file: "en/index.html"
         fields:
-          - {label: "Intro", name: "intro", widget: "markdown"}
+          - {label: "Intro", name: "intro", widget: "markdown
+          - {label: "Body", name: "text", widget: "markdown"}
           - {label: "HUJI", name: "huji", widget: "markdown"}
           - {label: "Bezalel", name: "bezalel", widget: "markdown"}
       - label: "Projects"
@@ -127,5 +128,3 @@ collections:
       - { label: "Bezalel Department", name: "department", widget: "string" }
       - { label: "Graduation Year", name: "grad_year", widget: "string" }
       - { label: "Profile Image", name: "profile", widget: "image" }
-
-
