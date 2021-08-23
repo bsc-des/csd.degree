@@ -95,3 +95,20 @@
     float: right;
   }
 }
+
+.projects-preview {
+  display: flex;
+  position: relative;
+  height: 300px;
+
+  .project-item {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
