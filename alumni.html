@@ -31,7 +31,7 @@ text: |-
         <div class="alumni-item">
             <img src="{{ post.profile }}" class="profile" />
             <div class="name">{{ post.hebrew_name | escape }}</div>
-            <div class="author">{{ post.name | escape }}</div>
+            <div>{{ post.name | escape }}</div>
             <div class="links">
               {% if post.instagram != '' %}
               <a href="{{ post.instagram }}" class="icon-link" target="_blank">
