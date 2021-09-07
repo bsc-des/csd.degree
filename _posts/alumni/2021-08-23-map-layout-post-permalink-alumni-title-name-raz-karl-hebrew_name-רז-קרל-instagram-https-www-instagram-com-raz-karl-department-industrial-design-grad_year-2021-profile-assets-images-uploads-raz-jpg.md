@@ -3,7 +3,7 @@ layout: post
 permalink: alumni/:title
 name: Raz Karl
 hebrew_name: רז קרל
-website: http://www.razkarl.com
+website: https://www.razkarl.com/
 instagram: https://www.instagram.com/raz.karl/
 department: Industrial Design
 grad_year: "2021"
