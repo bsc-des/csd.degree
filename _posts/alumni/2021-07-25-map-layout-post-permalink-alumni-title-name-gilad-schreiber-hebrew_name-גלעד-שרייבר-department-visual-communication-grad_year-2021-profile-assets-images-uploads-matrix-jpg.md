@@ -3,7 +3,7 @@ layout: post
 permalink: alumni/:title
 name: Gilad Schreiber
 hebrew_name: גלעד שרייבר
-website: http://giladschreiber.com
+website: https://giladschreiber.com/
 instagram: https://www.instagram.com/giladschraiber/
 department: Visual Communication
 grad_year: "2021"
